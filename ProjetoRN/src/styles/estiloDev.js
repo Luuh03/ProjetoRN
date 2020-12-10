@@ -9,8 +9,8 @@ const estiloDev = StyleSheet.create ({
         alignItems: 'center',
     },
     devContainer: {
-        width: 229,
-        height: 217,
+        width: 250,
+        padding: 15,
         backgroundColor: '#B9E6FF',
         borderRadius: 31,
         borderWidth: 1,
@@ -33,6 +33,8 @@ const estiloDev = StyleSheet.create ({
         alignItems: 'center',
         borderWidth: 1,
         borderColor: '#2F80ED',
+        margin: 25,
+        marginTop: 7
     },
     textoContainer: {
         fontSize: 24,
@@ -42,6 +44,18 @@ const estiloDev = StyleSheet.create ({
         fontSize: 20,
         marginTop: 14.5,
         marginBottom: 20
+    },
+    info: {
+        fontSize: 17
+    },
+    add: {
+        height: 40,
+        width: 40,
+        backgroundColor: '#2F80ED',
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRadius: 30,
+        margin: 7
     }
 })
 

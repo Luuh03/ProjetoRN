@@ -8,6 +8,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import Dev from './src/view/Devs';
 import Inicial from './src/view/Inicial';
 import Produtos from './src/view/Produtos';
+import Aluno from './src/view/Aluno';
 
 const Stack = createStackNavigator();
 
@@ -36,6 +37,15 @@ export default function App() {
               <Stack.Screen 
                 name="Produtos" 
                 component={Produtos}
+                options={{
+                    headerStyle: { backgroundColor: '#B9E6FF' },
+                    headerTintColor: '#3E637E'
+                }
+                }
+              />
+              <Stack.Screen 
+                name="Aluno" 
+                component={Aluno}
                 options={{
                     headerStyle: { backgroundColor: '#B9E6FF' },
                     headerTintColor: '#3E637E'
