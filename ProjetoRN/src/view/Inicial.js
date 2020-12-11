@@ -9,7 +9,7 @@ function Inicial({ navigation }) {
     }
 
     const abrirDev = () => {
-        navigation.navigate('Dev')
+        navigation.navigate('Desenvolvedores')
     }
 
     return (

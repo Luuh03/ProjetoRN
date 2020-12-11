@@ -5,7 +5,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
-import Dev from './src/view/Devs';
+import Desenvolvedores from './src/view/Desenvolvedores';
 import Inicial from './src/view/Inicial';
 import Produtos from './src/view/Produtos';
 import Aluno from './src/view/Aluno';
@@ -26,8 +26,8 @@ export default function App() {
                 }
               />
               <Stack.Screen 
-                name="Dev" 
-                component={Dev} 
+                name="Desenvolvedores" 
+                component={Desenvolvedores} 
                 options={{
                     headerStyle: { backgroundColor: '#B9E6FF' },
                     headerTintColor: '#3E637E'

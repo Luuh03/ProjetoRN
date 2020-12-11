@@ -4,7 +4,7 @@ import estiloDev from '../styles/estiloDev';
 
 import { MaterialIcons } from '@expo/vector-icons';
 
-function Dev({ navigation }) {
+function Desenvolvedores({ navigation }) {
 
     const voltar = () => {
         navigation.goBack();
@@ -17,20 +17,12 @@ function Dev({ navigation }) {
     return(
         <View style={estiloDev.container}>
             <View style={estiloDev.devContainer}>
-                <Image 
-                    style={estiloDev.foto}
-                    source={require('../images/luan.png')}
-                />
                 <Text style={estiloDev.textoContainer}>Luan E. de Queiroz</Text>
                 <Text style={estiloDev.info}>3ºMIA</Text>
                 <Text style={estiloDev.info}>Turma B</Text>
             </View>
 
             <View style={estiloDev.devContainer}>
-                <Image 
-                    style={estiloDev.foto}
-                    source={require('../images/lucas.png')}
-                />
                 <Text style={estiloDev.textoContainer}>Lucas Galli Lopes</Text>
                 <Text style={estiloDev.info}>3ºMIA</Text>
                 <Text style={estiloDev.info}>Turma B</Text>
@@ -48,4 +40,4 @@ function Dev({ navigation }) {
     );
 }
 
-export default Dev;
+export default Desenvolvedores;
