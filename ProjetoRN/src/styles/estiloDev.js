@@ -8,22 +8,6 @@ const estiloDev = StyleSheet.create ({
         justifyContent: 'center',
         alignItems: 'center',
     },
-    devContainer: {
-        width: 250,
-        padding: 15,
-        backgroundColor: '#B9E6FF',
-        borderRadius: 31,
-        borderWidth: 1,
-        borderColor: '#2F80ED',
-        alignItems: 'center',
-        justifyContent: 'center',
-        margin: 5.5
-    },
-    foto: {
-        width: 150,
-        height: 150,
-        marginBottom: 12,
-    },
     botao: {
         backgroundColor: '#B9E6FF',
         width: '252px',
@@ -44,9 +28,6 @@ const estiloDev = StyleSheet.create ({
         fontSize: 20,
         marginTop: 14.5,
         marginBottom: 20
-    },
-    info: {
-        fontSize: 17
     },
     add: {
         height: 40,

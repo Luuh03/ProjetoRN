@@ -1,10 +1,16 @@
-import React from 'react';
-import { Text, View, TouchableOpacity, Image } from 'react-native';
+import React, { useState, useEffect } from 'react';
+import { Text, View, TouchableOpacity, Image, FlatList } from 'react-native';
 import estiloDev from '../styles/estiloDev';
 
 import { MaterialIcons } from '@expo/vector-icons';
 
 function Desenvolvedores({ navigation }) {
+
+    const [devs, setDevs] = useState([]);
+
+    useEffect(() => {
+        setAluno(route.params ? route.params : {});
+    }, [route.params]);
 
     const voltar = () => {
         navigation.goBack();
@@ -16,17 +22,13 @@ function Desenvolvedores({ navigation }) {
 
     return(
         <View style={estiloDev.container}>
-            <View style={estiloDev.devContainer}>
-                <Text style={estiloDev.textoContainer}>Luan E. de Queiroz</Text>
-                <Text style={estiloDev.info}>3ºMIA</Text>
-                <Text style={estiloDev.info}>Turma B</Text>
-            </View>
-
-            <View style={estiloDev.devContainer}>
-                <Text style={estiloDev.textoContainer}>Lucas Galli Lopes</Text>
-                <Text style={estiloDev.info}>3ºMIA</Text>
-                <Text style={estiloDev.info}>Turma B</Text>
-            </View>
+            
+            <FlatList 
+                showsHorizontalScrollIndicator={false}
+                keyExtractor={(aluno) => aluno.id}
+                data={devs}
+                renderItem={ ({aluno}) => <ItemLista data={aluno}/>}
+            />
 
             <TouchableOpacity style={estiloDev.add} onPress={abrirAluno}>
                 <MaterialIcons name="add" size={24} color="white" />
